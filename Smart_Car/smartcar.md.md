@@ -9,9 +9,9 @@ frame = cv2.resize(frame, None, fx = 0.25, fy = 0.25,
 interpolation= cv2.INTER_NEAREST) 
 HSV_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)#转为HSV色域
 ```
-2. 获取到图片，设计算法判断白线位置。
+2. 获取到图片，设计算法获取白线位置。
 ```python
-def is_white(point):
+def is_white(point):#判断是否为白色
 	if point[1] < 20 and point[2] > 230:
 		return 1
 	else:
@@ -23,6 +23,6 @@ def is_white(point):
 ```
 	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ4MjI2MzU4LDEyNTUyNzI0NzMsLTUwOD
-c0NzM0MSwtMjA4ODc0NjYxMiwxNDcyNDI2Mzc1XX0=
+eyJoaXN0b3J5IjpbLTIxMzM2NTM2NzYsMTI1NTI3MjQ3MywtNT
+A4NzQ3MzQxLC0yMDg4NzQ2NjEyLDE0NzI0MjYzNzVdfQ==
 -->
