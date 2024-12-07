@@ -123,10 +123,13 @@ while True:
 在任务二中，我们增加了黄线获取函数，更改PD参数使得小车双线循迹更加稳定，其余步骤与任务一类似。达到预期效果
 
 ## 任务三：搭建神经网络实现标志路牌识别
-### 目标：
-	
+### 目标：通过简单神经网络识别路牌并按照路牌指示运行
+实现步骤以及代码摘要：
+1. 神经网络模型搭建、训练、测试。
+2. 
+3. 运行l	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTY3MjkyMjYsLTIxMzM2NTM2NzYsMT
-I1NTI3MjQ3MywtNTA4NzQ3MzQxLC0yMDg4NzQ2NjEyLDE0NzI0
-MjYzNzVdfQ==
+eyJoaXN0b3J5IjpbMTQwMjMwNDI1OCwtMjEzMzY1MzY3NiwxMj
+U1MjcyNDczLC01MDg3NDczNDEsLTIwODg3NDY2MTIsMTQ3MjQy
+NjM3NV19
 -->
