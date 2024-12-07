@@ -3,7 +3,7 @@
 
 注：实验场地如图
 
-![court](微信图片_20241208003640.jpg)
+![court](/imgs/2024-12-08/xiRnVF3jh4jGsha8.jpeg)
 
 ## 任务一：单线循迹
 
@@ -699,10 +699,10 @@ x, y, w1, h = cv2.boundingRect(max_cnt)
 
 最后附上一张我们的合影。深深感谢我的队友、课程老师和助教！
 
-![帅照](6e1a0ff1e4d133a29c1dcb799473efb.jpg)
+![帅照](/imgs/2024-12-08/MyUTInHv6LTNr7cj.jpeg)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzcwMDI3MzUsLTEwMDQyMTMyNTIsMT
-I3NTUwNzM1MCw4OTM5ODg1ODQsLTIxMzM2NTM2NzYsMTI1NTI3
-MjQ3MywtNTA4NzQ3MzQxLC0yMDg4NzQ2NjEyLDE0NzI0MjYzNz
-VdfQ==
+eyJoaXN0b3J5IjpbNDQyOTg1OCwtMTAwNDIxMzI1MiwxMjc1NT
+A3MzUwLDg5Mzk4ODU4NCwtMjEzMzY1MzY3NiwxMjU1MjcyNDcz
+LC01MDg3NDczNDEsLTIwODg3NDY2MTIsMTQ3MjQyNjM3NV19
 -->
