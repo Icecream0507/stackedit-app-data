@@ -33,8 +33,7 @@ def getmid(hsv):#获取白线中线位置，用20个高度上的白线取平均
 	return sum(midline)/len(midline)
 ```
 3. 由白线位置和设定值算出小车理论运动速度，使用PD算法控制小车循迹行驶。
-```python
-try:
+```pythontry:
 last_dmid = 0
 dmid = 0
 	while True:
@@ -62,7 +61,7 @@ dmid = 0
 ### 目标：使小车在白色线和黄色线中间循迹行驶
 实验步骤以及代码摘要：
 1. 获取白、黄线，设计平均算法获取合理中线位置。
-```python
+```python 
 def is_white(point):#白色判断
 	if point[1] < 20 and point[2] > 230:
 		return 1
@@ -103,7 +102,7 @@ def getmid(hsv):#中线获取
 ```
 	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Njg3NzY1MjYsLTIxMzM2NTM2NzYsMT
+eyJoaXN0b3J5IjpbLTEzNTA0MDMwMjYsLTIxMzM2NTM2NzYsMT
 I1NTI3MjQ3MywtNTA4NzQ3MzQxLC0yMDg4NzQ2NjEyLDE0NzI0
 MjYzNzVdfQ==
 -->
