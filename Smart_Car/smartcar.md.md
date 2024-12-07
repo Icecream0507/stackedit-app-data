@@ -17,7 +17,7 @@ def is_white(point):#判断是否为白色
 	else:
 		return 0
 
-def getmid(hsv):#获取白线中线位置，用20ge
+def getmid(hsv):#获取白线中线位置，用20个高度上的白线取平均
 	midline = []
 	for y in range(80, 100):
 		white_x = [81]
@@ -34,11 +34,44 @@ def getmid(hsv):#获取白线中线位置，用20ge
 ```
 3. 由白线位置和设定值算出小车理论运动速度，控制小车循迹行驶。
 ```python
+try:
+last_dmid = 0
+dmid = 0
+	while True:
+		mid = getmid(HSV_frame)
+		kp = 2
+		kd = 1
+#cv2.imshow("frame",HSV_frame)
 
+last_mid = dmid
+
+dmid = 81 - mid
+
+d = dmid - last_mid
+
+w = kp * dmid + kd * d
+
+x_speed = 80
+
+y_speed = 0
+
+  
+
+if(abs(dmid) >= 18):
+
+x_speed /= 5
+
+if(abs(dmid) <= 5):
+
+x_speed *= -0.125*abs(2*dmid) + 2.25
+
+#print(mid,"|",dmid)
+
+car.set_speed(x_speed, y_speed, w)
 ```
 	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIwNjMyNDQ2LC0yMTMzNjUzNjc2LDEyNT
-UyNzI0NzMsLTUwODc0NzM0MSwtMjA4ODc0NjYxMiwxNDcyNDI2
-Mzc1XX0=
+eyJoaXN0b3J5IjpbLTEyNzAzODUxMjEsLTIxMzM2NTM2NzYsMT
+I1NTI3MjQ3MywtNTA4NzQ3MzQxLC0yMDg4NzQ2NjEyLDE0NzI0
+MjYzNzVdfQ==
 -->
