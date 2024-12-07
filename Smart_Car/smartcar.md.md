@@ -1,7 +1,7 @@
-![](C:\Users\MI\Desktop\微信图片_20241207215308.png)
+![交大校徽](/imgs/2024-12-07/jjWhkaFKZEUe1LhK.png)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMTA5MDc2MiwtMjA4ODc0NjYxMiwxND
-cyNDI2Mzc1XX0=
+eyJoaXN0b3J5IjpbMTA3MzA0NCwtMjA4ODc0NjYxMiwxNDcyND
+I2Mzc1XX0=
 -->
