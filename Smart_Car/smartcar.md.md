@@ -33,26 +33,26 @@ def getmid(hsv):#获取白线中线位置，用20个高度上的白线取平均
 	return sum(midline)/len(midline)
 ```
 3. 由白线位置和设定值算出小车理论运动速度，使用PD算法控制小车循迹行驶。
-```pythontry:
+```python 
 last_dmid = 0
 dmid = 0
-	while True:
-		mid = getmid(HSV_frame)
-		kp = 2
-		kd = 1
-		#cv2.imshow("frame",HSV_frame)
-		last_mid = dmid
-		dmid = 81 - mid
-		d = dmid - last_mid
-		w = kp * dmid + kd * d
-		x_speed = 80
-		y_speed = 0
-		if(abs(dmid) >= 18):#线性函数调速
-			x_speed /= 5
-		if(abs(dmid) <= 5):
-			x_speed *= -0.125*abs(2*dmid) + 2.25
-		#print(mid,"|",dmid)
-		car.set_speed(x_speed, y_speed, w)
+while True:
+	mid = getmid(HSV_frame)
+	kp = 2
+	kd = 1
+	#cv2.imshow("frame",HSV_frame)
+	last_mid = dmid
+	dmid = 81 - mid
+	d = dmid - last_mid
+	w = kp * dmid + kd * d
+	x_speed = 80
+	y_speed = 0
+	if(abs(dmid) >= 18):#线性函数调速
+		x_speed /= 5
+	if(abs(dmid) <= 5):
+		x_speed *= -0.125*abs(2*dmid) + 2.25
+	#print(mid,"|",dmid)
+	car.set_speed(x_speed, y_speed, w)
 ```
 ### 总结：
 在该任务中，我们通过HSV图像识别、平均中线获取、PD参数控制、以及线性函数调速实现了小车循白线功能，经过测试以及验证，小车运行总体流畅丝滑。达到了预期目标。 
@@ -98,11 +98,30 @@ def getmid(hsv):#中线获取
 ```
 3. 与任务一类似的PD控制小车循迹。
 ```python
+last_dmid = 0
+dmid = 0
+while True:
+mid = getmid(HSV_frame)
+kp = 2
+kd = 5
+#cv2.imshow("frame",HSV_frame)
+last_mid = dmid
+dmid = 81 - mid
+d = dmid - last_mid
+w = kp * dmid + kd * d
+x_speed = 50
+y_speed = 0
+#print(mid,w)
+if(abs(dmid) >= 18):
+x_speed /= 5
+if(abs(dmid) <= 5):
+x_speed *= -0.125*abs(2*dmid) + 2.25
 
+car.set_speed(x_speed, y_speed, w)
 ```
 	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTA0MDMwMjYsLTIxMzM2NTM2NzYsMT
-I1NTI3MjQ3MywtNTA4NzQ3MzQxLC0yMDg4NzQ2NjEyLDE0NzI0
-MjYzNzVdfQ==
+eyJoaXN0b3J5IjpbMTUzNjU0Njg5NywtMjEzMzY1MzY3NiwxMj
+U1MjcyNDczLC01MDg3NDczNDEsLTIwODg3NDY2MTIsMTQ3MjQy
+NjM3NV19
 -->
