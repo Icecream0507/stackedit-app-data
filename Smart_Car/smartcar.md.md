@@ -1,8 +1,12 @@
 # 一.实验概述
 ## 任务一：单线循迹
 ### 目标：使小车沿着固定的白色单线行进。
-### 实验步骤：1.小车由摄像头获取图片信息
+实验步骤：
+1. 小车由摄像头获取图片信息
+2. 获取到图片she'ji
+3. 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc2OTgyMjA5LC01MDg3NDczNDEsLTIwOD
-g3NDY2MTIsMTQ3MjQyNjM3NV19
+eyJoaXN0b3J5IjpbLTE5ODc3NTM5OTUsLTUwODc0NzM0MSwtMj
+A4ODc0NjYxMiwxNDcyNDI2Mzc1XX0=
 -->
