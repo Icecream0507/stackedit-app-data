@@ -1,6 +1,10 @@
 
 # 一.实验概述
 
+注：实验场地如图
+
+![court](微信图片_20241208003640.jpg)
+
 ## 任务一：单线循迹
 
 ### 目标：使小车沿着固定的白色单线行进。
@@ -683,11 +687,22 @@ x, y, w1, h = cv2.boundingRect(max_cnt)
 
 1. 本次实验是与图像处理，运动控制相关的麦克纳姆轮小车实验。在实验中我初步接触了OpenCV的图像处理相关知识，运用了HSV色域、PD算法控制等初等算法，以及简单的CNN网络模型，对控制领域以及简单的神经网络有了初步的了解与认识。
 
-2. 实验过程中我和队友通力协作，相互配合，共同解决了诸多问题，体会到了团队协作的力量。
+  
+
+2. 实验过程中我和队友通力协作，相互配合，共同解决了诸多问题，体会到了团队协作的力量。我也从他那里学到了MARKDOWN的基础语法。
+
+  
 
 3. 整体上，这次实验是理论与实践相结合的具体项目，不仅让我收获了知识，体悟了团队精神，还培养了我的工程能力，是一次精彩的实践之旅。
+
+  
+
+最后附上一张我们的合影。深深感谢我的队友、课程老师和助教！
+
+![帅照](6e1a0ff1e4d133a29c1dcb799473efb.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDQyMTMyNTIsMTI3NTUwNzM1MCw4OT
-M5ODg1ODQsLTIxMzM2NTM2NzYsMTI1NTI3MjQ3MywtNTA4NzQ3
-MzQxLC0yMDg4NzQ2NjEyLDE0NzI0MjYzNzVdfQ==
+eyJoaXN0b3J5IjpbLTIwNzcwMDI3MzUsLTEwMDQyMTMyNTIsMT
+I3NTUwNzM1MCw4OTM5ODg1ODQsLTIxMzM2NTM2NzYsMTI1NTI3
+MjQ3MywtNTA4NzQ3MzQxLC0yMDg4NzQ2NjEyLDE0NzI0MjYzNz
+VdfQ==
 -->
