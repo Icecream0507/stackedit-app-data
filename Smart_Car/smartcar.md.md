@@ -68,6 +68,7 @@ def is_white(point):#白色判断
 		return 1
 	else:
 		return 0
+		
 def is_yellow(point):#黄色判断
 	if point[0] > 26 and point[0] < 34 and point[1] >43 and point[2] > 46:
 		return 1
@@ -79,20 +80,21 @@ def getmid(hsv):#中线获取
 	for y in range(80, 100):
 		white_x = []
 		yellow_x = []
-	for x in range(0,160):
-		if is_white(hsv[y][x]):
-			if x < 81:
-				white_x.append(x)
-				hsv[y][x] = (0, 0, 0)
-		if is_yellow(hsv[y][x]):
-			yellow_x.append(x)
-			hsv[y][x] = (0 ,0 ,0)
-		if(len(white_x) == 0 or len(yellow_x) == 0):
-			pass
-		else:
-			#midline.append(white_x[-1])
-			midline.append((white_x[-1] + yellow_x[-1])/2)
-			hsv[y][int(midline[-1])] = (0, 0, 0)
+		for x in range(0,160):
+			if is_white(hsv[y][x]):
+				if x < 81:
+					white_x.append(x)
+					hsv[y][x] = (0, 0, 0)
+			if is_yellow(hsv[y][x]):
+				yellow_x.append(x)
+				hsv[y][x] = (0 ,0 ,0)
+			if(len(white_x) == 0 or len(yellow_x) == 0):
+				pass
+			else:
+				#midline.append(white_x[-1])
+				midline.append((white_x[-1] + yellow_x[-1])/2)
+				hsv[y][int(midline[-1])] = (0, 0, 0)
+			
 	return sum(midline)/len(midline)
 ```
 3. 与任务一类似的PD控制小车循迹。
@@ -101,7 +103,7 @@ def getmid(hsv):#中线获取
 ```
 	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODgyMDY5MTAsLTIxMzM2NTM2NzYsMTI1NT
-I3MjQ3MywtNTA4NzQ3MzQxLC0yMDg4NzQ2NjEyLDE0NzI0MjYz
-NzVdfQ==
+eyJoaXN0b3J5IjpbLTE5Njg3NzY1MjYsLTIxMzM2NTM2NzYsMT
+I1NTI3MjQ3MywtNTA4NzQ3MzQxLC0yMDg4NzQ2NjEyLDE0NzI0
+MjYzNzVdfQ==
 -->
