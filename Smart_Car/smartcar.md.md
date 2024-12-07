@@ -9,7 +9,7 @@ frame = cv2.resize(frame, None, fx = 0.25, fy = 0.25,
 interpolation= cv2.INTER_NEAREST) 
 HSV_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)#转为HSV色域
 ```
-2. 获取到图片，设计算法获取白线位置。
+2. 获取到图片，设计算法获取白线中线位置。
 ```python
 def is_white(point):#判断是否为白色
 	if point[1] < 20 and point[2] > 230:
@@ -59,11 +59,11 @@ dmid = 0
 在该任务中，我们通过HSV图像识别、平均中线获取、PD参数控制、以及线性函数调速实现了小车循白线功能，经过测试以及验证，小车运行总体流畅丝滑。达到了预期目标。
 
 ## 任务二：双线循迹
-### 目标：shi'xiao'che
+### 目标：使小车在白色线和黄色线中间循迹行驶
 
 	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MTYxNDQ0NiwtMjEzMzY1MzY3NiwxMj
-U1MjcyNDczLC01MDg3NDczNDEsLTIwODg3NDY2MTIsMTQ3MjQy
-NjM3NV19
+eyJoaXN0b3J5IjpbLTExMDQ0ODU1NDQsLTIxMzM2NTM2NzYsMT
+I1NTI3MjQ3MywtNTA4NzQ3MzQxLC0yMDg4NzQ2NjEyLDE0NzI0
+MjYzNzVdfQ==
 -->
