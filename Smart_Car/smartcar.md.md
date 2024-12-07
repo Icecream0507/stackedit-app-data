@@ -60,10 +60,16 @@ dmid = 0
 
 ## 任务二：双线循迹
 ### 目标：使小车在白色线和黄色线中间循迹行驶
-
+实验步骤以及代码摘要：
+1. 获取白、黄线，设计平均算法获取合理中线位置。
+```python
+```
+3. 与任务一类似的PD控制小车循迹。
+```python
+```
 	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDQ0ODU1NDQsLTIxMzM2NTM2NzYsMT
-I1NTI3MjQ3MywtNTA4NzQ3MzQxLC0yMDg4NzQ2NjEyLDE0NzI0
-MjYzNzVdfQ==
+eyJoaXN0b3J5IjpbLTUyNTkwMTUxOCwtMjEzMzY1MzY3NiwxMj
+U1MjcyNDczLC01MDg3NDczNDEsLTIwODg3NDY2MTIsMTQ3MjQy
+NjM3NV19
 -->
