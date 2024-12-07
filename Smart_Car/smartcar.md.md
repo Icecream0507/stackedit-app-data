@@ -120,7 +120,7 @@ while True:
 ```
 
 ### 总结：
-在任务二中，我们增加了黄线获取函数，更改PD参数使得小车双线循迹更加稳定，其余步骤与任务一类似。达到预期效果
+在任务二中，我们增加了黄线获取函数，更改PD参数使得小车双线循迹更加稳定，其余步骤与任务一类似。达到预期效果.
 
 ## 任务三：搭建神经网络实现标志路牌识别
 ### 目标：通过简单神经网络识别路牌并按照路牌指示运行
@@ -138,7 +138,7 @@ while True:
 ```python
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkzOTg4NTg0LC0yMTMzNjUzNjc2LDEyNT
-UyNzI0NzMsLTUwODc0NzM0MSwtMjA4ODc0NjYxMiwxNDcyNDI2
-Mzc1XX0=
+eyJoaXN0b3J5IjpbLTcwNzI1NTMxOCw4OTM5ODg1ODQsLTIxMz
+M2NTM2NzYsMTI1NTI3MjQ3MywtNTA4NzQ3MzQxLC0yMDg4NzQ2
+NjEyLDE0NzI0MjYzNzVdfQ==
 -->
