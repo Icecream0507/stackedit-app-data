@@ -56,27 +56,26 @@ dmid = 0
 		car.set_speed(x_speed, y_speed, w)
 ```
 ### 总结：
-在该任务中，我们通过HSV图像识别、平均中线获取、PD参数控制、以及线性函数调速实现了小车循白线功能，经过测试以及验证，小车运行总体流畅丝滑。达到了预期目标。
+在该任务中，我们通过HSV图像识别、平均中线获取、PD参数控制、以及线性函数调速实现了小车循白线功能，经过测试以及验证，小车运行总体流畅丝滑。达到了预期目标。 
 
 ## 任务二：双线循迹
 ### 目标：使小车在白色线和黄色线中间循迹行驶
 实验步骤以及代码摘要：
 1. 获取白、黄线，设计平均算法获取合理中线位置。
 ```python
-def is_white(point):
+def is_white(point):#白色判断
 	if point[1] < 20 and point[2] > 230:
 		return 1
 	else:
 		return 0
-def is_yellow(point):
+def is_yellow(point):#黄色判断
 	if point[0] > 26 and point[0] < 34 and point[1] >43 and point[2] > 46:
 		return 1
 	else:
 		return 0
 		
-def getmid(hsv):
+def getmid(hsv):#中线获取
 	midline = [81]
-	white_is_left = 1
 	for y in range(80, 100):
 		white_x = []
 		yellow_x = []
@@ -102,7 +101,7 @@ def getmid(hsv):
 ```
 	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NDczMDQ4NywtMjEzMzY1MzY3NiwxMj
-U1MjcyNDczLC01MDg3NDczNDEsLTIwODg3NDY2MTIsMTQ3MjQy
-NjM3NV19
+eyJoaXN0b3J5IjpbODgyMDY5MTAsLTIxMzM2NTM2NzYsMTI1NT
+I3MjQ3MywtNTA4NzQ3MzQxLC0yMDg4NzQ2NjEyLDE0NzI0MjYz
+NzVdfQ==
 -->
