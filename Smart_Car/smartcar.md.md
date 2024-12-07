@@ -126,10 +126,14 @@ while True:
 ### 目标：通过简单神经网络识别路牌并按照路牌指示运行
 实现步骤以及代码摘要：
 1. 神经网络模型搭建、训练、测试。
-2. 
-3. 运行l	
+```python
+```
+2. 在树莓派上部署训练好的模型，识别标志牌并输出结果进行测试。
+```python
+```
+4. 小车运动逻辑设计。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMjMwNDI1OCwtMjEzMzY1MzY3NiwxMj
+eyJoaXN0b3J5IjpbMTM2Mjg1NTQyMCwtMjEzMzY1MzY3NiwxMj
 U1MjcyNDczLC01MDg3NDczNDEsLTIwODg3NDY2MTIsMTQ3MjQy
 NjM3NV19
 -->
