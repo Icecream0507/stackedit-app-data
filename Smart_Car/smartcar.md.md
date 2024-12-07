@@ -63,13 +63,55 @@ dmid = 0
 实验步骤以及代码摘要：
 1. 获取白、黄线，设计平均算法获取合理中线位置。
 ```python
+def is_white(point):
+if point[1] < 20 and point[2] > 230:
+return 1
+else:
+return 0
+def is_yellow(point):
+if point[0] > 26 and point[0] < 34 and point[1] >43 and point[2] > 46:
+return 1
+else:
+return 0
+def getmid(hsv):
+midline = [81]
+white_is_left = 1
+for y in range(80, 100):
+white_x = []
+yellow_x = []
+for x in range(0,160):
+if is_white(hsv[y][x]):
+if x < 81:
+
+white_x.append(x)
+
+hsv[y][x] = (0, 0, 0)
+
+if is_yellow(hsv[y][x]):
+
+yellow_x.append(x)
+
+hsv[y][x] = (0 ,0 ,0)
+
+if(len(white_x) == 0 or len(yellow_x) == 0):
+
+pass
+
+else:
+
+#midline.append(white_x[-1])
+
+midline.append((white_x[-1] + yellow_x[-1])/2)
+
+hsv[y][int(midline[-1])] = (0, 0, 0)
 ```
 3. 与任务一类似的PD控制小车循迹。
 ```python
+
 ```
 	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyNTkwMTUxOCwtMjEzMzY1MzY3NiwxMj
+eyJoaXN0b3J5IjpbMTE0NzIwMDQyNCwtMjEzMzY1MzY3NiwxMj
 U1MjcyNDczLC01MDg3NDczNDEsLTIwODg3NDY2MTIsMTQ3MjQy
 NjM3NV19
 -->
