@@ -125,15 +125,20 @@ while True:
 ## 任务三：搭建神经网络实现标志路牌识别
 ### 目标：通过简单神经网络识别路牌并按照路牌指示运行
 实现步骤以及代码摘要：
-1. 神经网络模型搭建、训练、测试。
+1. 神经网络模型搭建、数据采集。
 ```python
 ```
-2. 在树莓派上部署训练好的模型，识别标志牌并输出结果进行测试。
+2. 模型训练、测试。
 ```python
 ```
-4. 小车运动逻辑设计。
+4. 在树莓派上部署训练好的模型，识别标志牌并输出结果进行测试。
+```python
+```
+5. 小车运动逻辑设计。
+```python
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2Mjg1NTQyMCwtMjEzMzY1MzY3NiwxMj
-U1MjcyNDczLC01MDg3NDczNDEsLTIwODg3NDY2MTIsMTQ3MjQy
-NjM3NV19
+eyJoaXN0b3J5IjpbODkzOTg4NTg0LC0yMTMzNjUzNjc2LDEyNT
+UyNzI0NzMsLTUwODc0NzM0MSwtMjA4ODc0NjYxMiwxNDcyNDI2
+Mzc1XX0=
 -->
