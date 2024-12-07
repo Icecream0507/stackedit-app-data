@@ -101,27 +101,29 @@ def getmid(hsv):#中线获取
 last_dmid = 0
 dmid = 0
 while True:
-mid = getmid(HSV_frame)
-kp = 2
-kd = 5
-#cv2.imshow("frame",HSV_frame)
-last_mid = dmid
-dmid = 81 - mid
-d = dmid - last_mid
-w = kp * dmid + kd * d
-x_speed = 50
-y_speed = 0
-#print(mid,w)
-if(abs(dmid) >= 18):
-x_speed /= 5
-if(abs(dmid) <= 5):
-x_speed *= -0.125*abs(2*dmid) + 2.25
-
-car.set_speed(x_speed, y_speed, w)
+	mid = getmid(HSV_frame)
+	kp = 2
+	kd = 5
+	#cv2.imshow("frame",HSV_frame)
+	last_mid = dmid
+	dmid = 81 - mid
+	d = dmid - last_mid
+	w = kp * dmid + kd * d
+	x_speed = 50
+	y_speed = 0
+	#print(mid,w)
+	if(abs(dmid) >= 18):
+		x_speed /= 5
+	if(abs(dmid) <= 5):
+		x_speed *= -0.125*abs(2*dmid) + 2.25
+	car.set_speed(x_speed, y_speed, w)
 ```
+
+### 总结：
+在任务二中，我们增加了黄线获取函数，更改PD参数使得小车双线循迹更加稳定
 	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzNjU0Njg5NywtMjEzMzY1MzY3NiwxMj
+eyJoaXN0b3J5IjpbLTgwNzg5Mjc4NCwtMjEzMzY1MzY3NiwxMj
 U1MjcyNDczLC01MDg3NDczNDEsLTIwODg3NDY2MTIsMTQ3MjQy
 NjM3NV19
 -->
