@@ -48,17 +48,18 @@ dmid = 0
 		w = kp * dmid + kd * d
 		x_speed = 80
 		y_speed = 0
-		if(abs(dmid) >= 18):
+		if(abs(dmid) >= 18):#线性函数调速
 			x_speed /= 5
 		if(abs(dmid) <= 5):
 			x_speed *= -0.125*abs(2*dmid) + 2.25
 		#print(mid,"|",dmid)
 		car.set_speed(x_speed, y_speed, w)
 ```
-## 总结：HSV图像识别、平均中线获取
+## 总结：
+在该任务中，我们通过HSV图像识别、平均中线获取、PD参数控制、以及线性函数调速实现了小车xun'bai'xi
 	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NjU2MTEzLC0yMTMzNjUzNjc2LDEyNT
+eyJoaXN0b3J5IjpbOTE4NDUyNzUxLC0yMTMzNjUzNjc2LDEyNT
 UyNzI0NzMsLTUwODc0NzM0MSwtMjA4ODc0NjYxMiwxNDcyNDI2
 Mzc1XX0=
 -->
