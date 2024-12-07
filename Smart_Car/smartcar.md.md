@@ -1,9 +1,7 @@
-![](/imgs/2024-12-07/jjWhkaFKZEUe1LhK.png)
-<center>姓名：薛俊智</center>
-<center>学号：523030910124</center>
-<center>学院：电子信息与电气工程学院</center>
-
+# 1.实验概述
+## ①任务一：单线循迹
+###
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUyODM3NTAwLC01MDg3NDczNDEsLTIwOD
-g3NDY2MTIsMTQ3MjQyNjM3NV19
+eyJoaXN0b3J5IjpbMTY2MjYwNjc3NiwtNTA4NzQ3MzQxLC0yMD
+g4NzQ2NjEyLDE0NzI0MjYzNzVdfQ==
 -->
