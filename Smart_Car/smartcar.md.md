@@ -16,6 +16,31 @@ def is_white(point):#判断是否为白色
 		return 1
 	else:
 		return 0
+
+def getmid(hsv):
+midline = []
+for y in range(80, 100):
+white_x = [81]
+for x in range(20,140):
+if i_white(hsv[y][x]):
+
+white_x.append(x)
+
+hsv[y][x] = (0, 0, 0)
+
+if(len(white_x) == 0):
+
+pass
+
+else:
+
+midline.append(sum(white_x)/len(white_x))
+
+#midline.append((white_x[-1] + yellow_x[-1])/2)
+
+hsv[y][int(midline[-1])] = (0, 0, 0)
+
+return sum(midline)/len(midline)
 ```
 3. 由白线位置和设定值算出小车理论运动速度，控制小车循迹行驶。
 ```python
@@ -23,6 +48,7 @@ def is_white(point):#判断是否为白色
 ```
 	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzM2NTM2NzYsMTI1NTI3MjQ3MywtNT
-A4NzQ3MzQxLC0yMDg4NzQ2NjEyLDE0NzI0MjYzNzVdfQ==
+eyJoaXN0b3J5IjpbLTE0MTUyMzIxMDIsLTIxMzM2NTM2NzYsMT
+I1NTI3MjQ3MywtNTA4NzQ3MzQxLC0yMDg4NzQ2NjEyLDE0NzI0
+MjYzNzVdfQ==
 -->
