@@ -32,7 +32,7 @@ def getmid(hsv):#获取白线中线位置，用20个高度上的白线取平均
 		hsv[y][int(midline[-1])] = (0, 0, 0)
 	return sum(midline)/len(midline)
 ```
-3. 由白线位置和设定值算出小车理论运动速度，控制小车循迹行驶。
+3. 由白线位置和设定值算出小车理论运动速度，使用PD算法控制小车循迹行驶。
 ```python
 try:
 last_dmid = 0
@@ -41,37 +41,24 @@ dmid = 0
 		mid = getmid(HSV_frame)
 		kp = 2
 		kd = 1
-#cv2.imshow("frame",HSV_frame)
-
-last_mid = dmid
-
-dmid = 81 - mid
-
-d = dmid - last_mid
-
-w = kp * dmid + kd * d
-
-x_speed = 80
-
-y_speed = 0
-
-  
-
-if(abs(dmid) >= 18):
-
-x_speed /= 5
-
-if(abs(dmid) <= 5):
-
-x_speed *= -0.125*abs(2*dmid) + 2.25
-
-#print(mid,"|",dmid)
-
-car.set_speed(x_speed, y_speed, w)
+		#cv2.imshow("frame",HSV_frame)
+		last_mid = dmid
+		dmid = 81 - mid
+		d = dmid - last_mid
+		w = kp * dmid + kd * d
+		x_speed = 80
+		y_speed = 0
+		if(abs(dmid) >= 18):
+			x_speed /= 5
+		if(abs(dmid) <= 5):
+			x_speed *= -0.125*abs(2*dmid) + 2.25
+		#print(mid,"|",dmid)
+		car.set_speed(x_speed, y_speed, w)
 ```
+## 总结：HSV图像识别、平均中线获取
 	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzAzODUxMjEsLTIxMzM2NTM2NzYsMT
-I1NTI3MjQ3MywtNTA4NzQ3MzQxLC0yMDg4NzQ2NjEyLDE0NzI0
-MjYzNzVdfQ==
+eyJoaXN0b3J5IjpbMTg5NjU2MTEzLC0yMTMzNjUzNjc2LDEyNT
+UyNzI0NzMsLTUwODc0NzM0MSwtMjA4ODc0NjYxMiwxNDcyNDI2
+Mzc1XX0=
 -->
